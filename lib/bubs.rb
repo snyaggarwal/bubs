@@ -6,7 +6,8 @@ class Bubs
   #
   # Returns a String, but a much cooler string than what you had initially.
   def self.convert(text)
-    text.tr('A-Za-z1-90', 'Ⓐ-Ⓩⓐ-ⓩ①-⑨⓪')
+    _text = text.tr('A-Za-z1-90', 'Ⓐ-Ⓩⓐ-ⓩ①-⑨⓪')
+    '▁ ▂ ▄ ▅ ▆ ▇ █' + _text + ' █ ▇ ▆ ▅ ▄ ▂ ▁'
   end
 
   # Copies the text to clipboard
